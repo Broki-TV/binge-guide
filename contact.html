@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Binge Guide | Contact</title>
+    <link rel="icon" type="image/png" href="/figma obr/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">
+                <img src="/figma obr/logo.png" alt="logo" class="logo">
+                <span class="site-title">The Binge Guide</span>
+            </a>
+            <button id="navToggle" class="nav-toggle" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="main-nav" id="mainNav">
+                <a href="anime.html">Anime</a>
+                <a href="manga.html">Manga</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero contact-hero">
+            <div class="container hero-inner">
+                <h1>SHARE YOUR PASSION</h1>
+                <p class="subtitle">Recommend an anime or a manga to other people like you!</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="forms-grid">
+                    <!-- Left: Recommend a title -->
+                    <div class="form-panel">
+                        <h2 class="form-heading">RECOMMEND A TITLE</h2>
+                        <form id="recommendForm">
+                            <label>Your name:
+                                <input type="text" name="name" required>
+                            </label>
+                            <label>E-mail:
+                                <input type="email" name="email" required>
+                            </label>
+                            <label>Type:
+                                <select name="type" required>
+                                    <option value="">Select type</option>
+                                    <option value="anime">Anime</option>
+                                    <option value="manga">Manga</option>
+                                </select>
+                            </label>
+                            <label>Rating:
+                                <input type="number" name="rating" min="1" max="10" step="0.1" placeholder="e.g., 8.5">
+                            </label>
+                            <label>Title name:
+                                <input type="text" name="title" required>
+                            </label>
+                            <label>Why do you recommend it?
+                                <textarea name="reason" rows="5" required></textarea>
+                            </label>
+                            <button type="submit" class="btn-submit">SUBMIT</button>
+                        </form>
+                    </div>
+
+                    <!-- Right: Ask a question -->
+                    <div class="form-panel">
+                        <h2 class="form-heading">ASK A QUESTION</h2>
+                        <form id="questionForm">
+                            <label>Your name:
+                                <input type="text" name="name" required>
+                            </label>
+                            <label>E-mail:
+                                <input type="email" name="email" required>
+                            </label>
+                            <label>Type out your question:
+                                <textarea name="question" rows="7" required></textarea>
+                            </label>
+                            <button type="submit" class="btn-submit">SUBMIT</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Recent Submissions -->
+                <div class="recent-submissions">
+                    <h2>RECENT SUBMISSIONS</h2>
+                    <div id="submissionsList" class="submissions-list">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+
+                <!-- FAQ Section -->
+                <div class="faq-section">
+                    <h2>FREQUENTLY ASKED QUESTIONS</h2>
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <button class="faq-toggle">How do you choose a recommendation?</button>
+                            <div class="faq-content">
+                                <p>We write them ourselves or select ones which are suitable after some consideration.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-toggle">Can I add my own title?</button>
+                            <div class="faq-content">
+                                <p>Yes! You can use the recommendation form above to submit your own titles for review.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-toggle">How often is the database updated?</button>
+                            <div class="faq-content">
+                                <p>It depends on how much recommendations we receive, have started to write database and most importantly how much time we have all of us here at The Binge Guide have full-time jobs.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-toggle">Is this site completely free?</button>
+                            <div class="faq-content">
+                                <p>Yes, The Binge Guide is completely free to use. No ads, no premium features—just pure recommendations for anime and manga fans.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2025 The Binge Guide • All rights reserved<br>Semester project for University of Žilina</p>
+        </div>
+    </footer>
+
+    <div id="simpleAlert" class="simple-alert" aria-live="polite" aria-atomic="true"></div>
+
+    <script src="scripts.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>

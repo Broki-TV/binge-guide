@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Binge Guide | Anime</title>
+    <link rel="icon" type="image/png" href="/figma obr/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="anime.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">
+                <img src="/figma obr/logo.png" alt="logo" class="logo">
+                <span class="site-title">The Binge Guide</span>
+            </a>
+            <button id="navToggle" class="nav-toggle" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="main-nav" id="mainNav">
+                <a href="anime.html">Anime</a>
+                <a href="manga.html">Manga</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-inner">
+                <h1>ANIME CATALOGUE</h1>
+                <p class="subtitle">Discover your next show to binge!</p>
+            </div>
+        </section>
+
+        <section class="cards">
+            <div class="container layout">
+                <aside class="filters">
+                    <label class="search-label">SEARCH ANIME
+                        <input id="searchBox" class="search-input" type="search" placeholder="Search anime...">
+                    </label>
+
+                    <div class="filter-block">
+                        <div class="filter-title">GENRES</div>
+                        <div class="filters-list">
+                            <label><input type="checkbox" value="shonen" checked> Shonen</label>
+                            <label><input type="checkbox" value="isekai" checked> Isekai</label>
+                            <label><input type="checkbox" value="romance" checked> Romance</label>
+                            <label><input type="checkbox" value="fantasy" checked> Fantasy</label>
+                            <label><input type="checkbox" value="scifi" checked> Sci-Fi</label>
+                            <label><input type="checkbox" value="slice" checked> Slice of Life</label>
+                        </div>
+                    </div>
+
+                    <div class="filter-block">
+                        <div class="filter-title">RELEASE YEAR</div>
+                        <input id="yearRange" type="range" min="1990" max="2025" value="2025">
+                        <div class="range-value"><span>1990</span><span>2025</span></div>
+                    </div>
+
+                    <button id="resetFilters" class="btn-outline">RESET FILTERS</button>
+                </aside>
+
+                <div class="cards-grid">
+                    <div class="card">
+                        <img src="/figma obr/naruto.png" alt="Naruto" class="card-img">
+                        <div class="card-body">
+                            <h4 class="card-title">Naruto <span class="score">(8.4/10)</span></h4>
+                            <div class="card-meta">Shonen, Fantasy • 2002</div>
+                            <p class="card-excerpt">Moments prior to Naruto Uzumaki's birth, a huge demon known as the Kyuubi attacked...</p>
+                            <div class="card-actions"><button class="btn-details">Details</button></div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="/figma obr/strawhates 270x180.png" alt="One Piece" class="card-img">
+                        <div class="card-body">
+                            <h4 class="card-title">One Piece <span class="score">(9/10)</span></h4>
+                            <div class="card-meta">Shonen, Fantasy • 1999</div>
+                            <p class="card-excerpt">Gold Roger was known as the 'Pirate King', the strongest and most infamous being...</p>
+                            <div class="card-actions"><button class="btn-details">Details</button></div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="/figma obr/aot 270x180.png" alt="Attack on Titan" class="card-img">
+                        <div class="card-body">
+                            <h4 class="card-title">Attack on Titan <span class="score">(9.1/10)</span></h4>
+                            <div class="card-meta">Sci-Fi, Fantasy • 2013</div>
+                            <p class="card-excerpt">Centuries ago, mankind was slaughtered to near extinction by monstrous humanoid...</p>
+                            <div class="card-actions"><button class="btn-details">Details</button></div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="/figma obr/hai 270x180.png" alt="Haikyu" class="card-img">
+                        <div class="card-body">
+                            <h4 class="card-title">Haikyuu!! <span class="score">(8.7/10)</span></h4>
+                            <div class="card-meta">Shonen • 2014</div>
+                            <p class="card-excerpt">Inspired after watching a volleyball ace nicknamed 'Little Giant' in action...</p>
+                            <div class="card-actions"><button class="btn-details">Details</button></div>
+                        </div>
+                    </div>
+
+                    <div class="card"><img src="/figma obr/kny 270x180.png" alt="Demon Slayer" class="card-img">
+                        <div class="card-body">
+                            <h4 class="card-title">Demon Slayer <span class="score">(8.6/10)</span></h4>
+                            <div class="card-meta">Fantasy, Shonen • 2019</div>
+                            <p class="card-excerpt">Ever since the death of his father, the burden of supporting the family...</p>
+                            <div class="card-actions"><button class="btn-details">Details</button></div>
+                            </div>
+                        </div>
+
+                    <div class="card">
+                        <img src="/figma obr/sao 270x180.png" alt="Sword Art Online" class="card-img">
+                        <div class="card-body">
+                            <h4 class="card-title">Sword Art Online <span class="score">(7.95/10)</span></h4>
+                            <div class="card-meta">Isekai, Fantasy • 2012</div>
+                            <p class="card-excerpt">In the year 2022, virtual reality has progressed by leaps...</p>
+                            <div class="card-actions"><button class="btn-details">Details</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2025 The Binge Guide • All rights reserved<br>Semester project for University of Žilina</p>
+        </div>
+    </footer>
+
+    <div id="simpleAlert" class="simple-alert" aria-live="polite" aria-atomic="true"></div>
+
+    <script src="scripts.js"></script>
+    <script src="anime.js"></script>
+</body>
+</html>

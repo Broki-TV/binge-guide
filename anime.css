@@ -1,0 +1,51 @@
+:root{
+  --bg:#21163E;
+  --panel:#2A1B4F;
+  --deep:#160E29;
+  --accent:#E03B42;
+  --muted:#8A8A99;
+  --cream:#FFFDCF;
+  --accent2:#C4C282;
+  --container:1100px;
+  --radius:12px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* layout: sidebar + grid */
+.layout{display:grid;grid-template-columns:280px 1fr;gap:28px;align-items:start}
+
+.filters{background:var(--bg);padding:18px;border-radius:var(--radius)}
+.search-label{display:block;color:var(--accent);font-weight:700;margin-bottom:12px}
+.search-input{width:100%;padding:10px 12px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:var(--cream)}
+.filter-block{margin-top:16px}
+.filter-title{font-weight:700;color:var(--accent);margin-bottom:8px}
+.filters-list label{display:block;margin:6px 0;color:var(--cream);font-size:14px}
+.range-value{margin-top:8px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between}
+#resetFilters{margin-top:14px;width:100%}
+
+/* Range slider styling to match accent */
+input[type="range"]{width:100%;appearance:none;-webkit-appearance:none;height:4px;background:linear-gradient(90deg,var(--accent) 0%, var(--accent) var(--range-progress,100%), rgba(255,255,255,0.12) var(--range-progress,100%));border-radius:8px;outline:none}
+input[type="range"]::-webkit-slider-thumb{-webkit-appearance:none;width:20px;height:20px;border-radius:50%;background:var(--cream);border:3px solid var(--accent);box-shadow:0 4px 12px rgba(0,0,0,0.4);margin-top:-8px;cursor:pointer}
+input[type="range"]::-moz-range-thumb{width:18px;height:18px;border-radius:50%;background:var(--cream);border:3px solid var(--accent);cursor:pointer}
+input[type="range"]::-webkit-slider-runnable-track{height:4px;border-radius:8px;background:rgba(255,255,255,0.12)}
+input[type="range"]::-moz-range-track{height:4px;border-radius:8px;background:rgba(255,255,255,0.12)}
+
+/* adjust cards grid spacing on this page */
+.cards-grid{grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:22px}
+.card{background:linear-gradient(180deg, rgba(0,0,0,0.15), rgba(0,0,0,0.08));}
+.card-body{padding:14px}
+.card-title{font-size:16px}
+.card-meta{font-size:12px}
+.card-excerpt{font-size:13px}
+
+/* responsive: stack sidebar above content on smaller screens */
+@media (max-width:980px){
+  .layout{grid-template-columns:1fr;}
+}
+
+@media (max-width:720px){
+  .layout{gap:14px}
+  .filters{padding:14px}
+  .search-input{padding:9px}
+  .cards-grid{grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:16px}
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Binge Guide | Homepage</title>
+    <link rel="icon" type="image/png" href="/figma obr/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">
+                <img src="/figma obr/logo.png" alt="logo" class="logo">
+                <span class="site-title">The Binge Guide</span>
+            </a>
+            <button id="navToggle" class="nav-toggle" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="main-nav" id="mainNav">
+                <a href="anime.html">Anime</a>
+                <a href="manga.html">Manga</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-inner">
+                <h1>THE BINGE GUIDE</h1>
+                <p class="subtitle">Your personal guide through the world of anime and manga</p>
+            </div>
+        </section>
+
+        <section class="intro">
+            <div class="container">
+                <h2>WELCOME TO THE BINGE GUIDE!</h2>
+                <h3>SOMETHING ABOUT US</h3>
+                <p class="lead">
+                    This site is made for the people that enjoy anime and manga, that cannot decide what to watch or what to read next.
+                    <br><br>
+                    That is exactly why we are here with our recommendations! We update and expand our database regularly with new titles and reviews from our community.
+                    <br><br>
+                    Whether you're a beginner or a seasoned fan, we believe you will find the thing you're looking for here!
+                </p>
+            </div>
+        </section>
+
+        <section class="cards">
+            <div class="container cards-grid">
+                <div class="card-column">
+                    <div class="cards-heading">RECOMMENDED ANIME</div>
+                    <div class="card">
+                        <img src="/figma obr/strawhates 270x180.png" alt="One Piece" class="card-img">
+                        <div class="card-body">
+                            <h4 class="card-title">ONE PIECE <span class="score">(9.2/10)</span></h4>
+                            <p class="card-excerpt">Gold Roger was known as the "Pirate King", the strongest and most infamous being to have sailed the Grand Line... </p>
+                            <div class="card-actions">
+                                <button class="btn-details">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-column">
+                    <div class="cards-heading">RECOMMENDED MANGA</div>
+                    <div class="card">
+                        <img src="/figma obr/bluelock.png" alt="Blue Lock" class="card-img">
+                        <div class="card-body">
+                            <h4 class="card-title">BLUE LOCK <span class="score">(8.5/10)</span></h4>
+                            <p class="card-excerpt">Yoichi Isagi was mere moments away from scoring a goal that would have sent his high school soccer team to the nationals... </p>
+                            <div class="card-actions">
+                                <button class="btn-details">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2025 The Binge Guide • All rights reserved<br>Semester project for University of Žilina</p>
+        </div>
+    </footer>
+
+        <!-- Simple alert placeholder -->
+        <div id="simpleAlert" class="simple-alert" aria-live="polite" aria-atomic="true"></div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
